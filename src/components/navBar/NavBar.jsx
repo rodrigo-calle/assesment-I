@@ -15,7 +15,7 @@ const NavBar = () => {
         <Link to="/" className="menu-container__menu--item">
           Home
         </Link>
-        <Link to="/products-detail" className="menu-container__menu--item">
+        <Link to="/detail:id" className="menu-container__menu--item">
           Product Detail
         </Link>
         <Link to="/about" className="menu-container__menu--item">

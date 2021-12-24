@@ -1,27 +1,27 @@
-.abouts{
+.details{
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
 }
-.about-container{
+.detail-container{
   display: flex;
   flex-direction: row;
   align-items: center;
   border-radius: 7px;
   padding: 25px;
   width: 70%;
-  height: 80vh;
+  height: fit-content;
   -webkit-box-shadow: 0 0 5px rgb(177, 177, 177);
   box-shadow: 0 0 5px rgb(177, 177, 177);
   margin: 30px auto;
 }
-.about-container__image{
+.detail-container__image{
   width: 50%;
   height: 65%;
   padding: 10px;
 }
-.about-container__caption{
+.detail-container__caption{
   width: 50%;
   height: 90%;
   padding: 10px;
@@ -30,46 +30,54 @@
   flex-direction: column;
   flex-wrap: wrap;
 }
-.about-container__caption--title{
+.detail-container__caption--title{
   font-weight: 600;
   font-size: 35px;
 }
-.about-container__caption--price{
+.detail-container__caption--price{
   font-weight: 500;
   font-size: 30px;
   border-top: 25px solid #fff;
   border-bottom: 25px solid #fff;
 }
-.about-container__caption p{
+.detail-container__caption p{
   margin: 0;
   margin-top: 3px;
   margin-bottom: 1px;
 }
 
-.about-container__caption--description{
+.detail-container__caption--description{
   margin: 5px 0px;
   vertical-align: middle;
   text-align: justify;
   line-height: 28px;
 }
 
-.about-container__caption--time{
+.detail-container__caption--time{
   border-top: 5px solid #fff;
   border-bottom: 5px solid #fff;
 }
 
-.about-container__caption--btn-about{
+.detail-container__caption--btn-detail{
   border: thin solid #000;
   padding: 5px;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
 }
-.about-container__caption--btn-about:hover{
+.card-container__caption--btn-blocked{
+  border: thin solid #000;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+}
+.detail-container__caption--btn-detail:hover{
   border: thin solid #3948FF;
   color: #3948FF;
 }
-.about-container__caption--rate{
+.detail-container__caption--rate{
   border-top: 20px solid #fff;
   border-bottom: 20px solid #fff;
   font-weight: bold;
@@ -84,10 +92,6 @@
   border-radius: 14px;
   padding: 15px;
   margin-top: 25px;
-  margin-right: 0;
-  display: flex;
-  justify-content: center;
-  align-self: center;
 }
 .btn-back:hover{
   background-color: #05082e;
@@ -95,41 +99,20 @@
 .loader{
   text-align: center;
 }
-.about-container__caption--email, .about-container__caption--github{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  text-decoration: none;
-  color: #000;
-  margin-top: 10px;
-  width: fit-content;
-}
-.social-icon{
-  height: 30px;
-  margin-right: 8px;
-}
-.about-container__caption--email:hover, .about-container__caption--github:hover{
-  color: #3948FF;
-}
-.about-container__caption--learned, .about-container__caption--social{
-  font-weight: 500;
-  font-size: 24px;
-}
-
 
 @media screen and (max-width: 480px) {
-  .abouts{
+  .details{
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .about-container__caption--description{
+  .detail-container__caption--description{
     display: none;
   }
 
-  .about-container{
+  .detail-container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -137,7 +120,7 @@
     padding: 5px;
     width: 100%;
   }
-  .about-container__caption{
+  .detail-container__caption{
     width: 45%;
     height: 90%;
     padding: 10px;
@@ -145,7 +128,7 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .about-container__caption--title{
+  .detail-container__caption--title{
     width: 80%;
   }
 
