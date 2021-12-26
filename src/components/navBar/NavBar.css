@@ -6,7 +6,10 @@
   padding: 20px 25px;
   width: 100%;
 }
-.menu-container__logo{
+.menu-container__logo-container{
+  width: 60%;
+}
+.menu-container__logo-container--logo{
   height: 45px;
   margin-right: 45px;
   cursor: pointer;
@@ -16,7 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60%;
+    width: 20%;
 }
 .menu-container__menu--item{
     text-decoration: none;

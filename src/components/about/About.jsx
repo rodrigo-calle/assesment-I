@@ -28,6 +28,9 @@ const About = () => {
           mis horas libres.
         </p>
         <p className="about-container__caption--learned">Learned list:</p>
+        <li>React Router</li>
+        <li>BEM</li>
+        <li>Context</li>
         <p className="about-container__caption--social">Contact and Social:</p>
         <a
           href="https://github.com/rodrigo-calle"
