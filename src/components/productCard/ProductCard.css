@@ -99,5 +99,8 @@
   .card-container__caption--title{
     width: 80%;
   }
-
+  .card-container{
+    margin: 0px 0px;
+    padding: 5px;
+  }
 }

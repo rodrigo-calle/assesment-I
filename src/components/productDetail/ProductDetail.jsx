@@ -43,7 +43,7 @@ const ProductDetail = () => {
                 {prod.description}
               </p>
               <p className="detail-container__caption--rate">Rate:</p>
-              <Rating initialValue={prod.rating.rate} />
+              <Rating className="rating" initialValue={prod.rating.rate} />
               <Link to="/" className="btn-back">
                 Back to Products
               </Link>

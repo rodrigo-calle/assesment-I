@@ -29,3 +29,27 @@
     font-weight: 600;
     transition-duration: 0.2s;
 }
+
+@media screen and (max-width: 480px) {
+  .menu-container{
+    padding: 0;
+    flex-direction: column;
+  }
+  .menu-container__logo-container--logo{
+    margin: 0;
+  }
+  .menu-container__logo-container{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-container__menu{
+    width: 100%;
+    justify-content:  center;
+    flex-wrap: wrap;
+  }
+  .menu-container__menu--item{
+    margin: 0px 10px;
+  }
+}

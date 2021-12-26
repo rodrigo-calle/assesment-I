@@ -26,7 +26,7 @@ const Home = () => {
       <h1>Home Page</h1>
       <div className="cards">
         {products.map((item) => (
-          <div key={item.id}>
+          <div className="card-from-home" key={item.id}>
             <ProductCard pro={item} />
           </div>
         ))}
